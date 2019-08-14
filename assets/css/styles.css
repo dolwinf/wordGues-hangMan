@@ -1,8 +1,5 @@
 body {
 	background-image: url("../images/DD-Grunge-Texture-88786-Preview.jpg");
 	color: white;
-}
-
-html {
-	font-family: "Beth Ellen", cursive;
+	font-family: "Beth Ellen", cursive !important;
 }
