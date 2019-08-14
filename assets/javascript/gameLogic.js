@@ -17,7 +17,7 @@ console.log(randomWordSplit);
 
 var dashedWords = [];
 for (var i = 0; i < randomWordSplit.length; i++) {
-  dashedWords[i] = "_";
+  dashedWords[i] = "_ ";
 }
 
 document.getElementById("test").innerHTML = dashedWords;

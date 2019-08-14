@@ -4,12 +4,34 @@
       Hangman
     </title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <p id="test"></p>
-    <p>Guess the word. Hint: It's a city!</p>
-    <p id="test2"></p>
-    <p id="test3">Guesses remaining: <label id="guesses-label"></label></p>
+    <h1 style="margin-left: 45%; margin-top: 10%">Hangman!</h1>
+    <div
+      class="container"
+      style="text-align: center; margin-top: 10%; margin-left: 40%; border-style: solid; border-block: black; border-width: 2px; width: 20%;"
+    >
+      <div
+        class="row"
+        style="padding-top: 20%; padding-left: 20%; padding-right: 20%; padding-bottom: 20%"
+      >
+        <div class="cols-md-12">
+          <p id="test" style="text-align: center"></p>
+
+          <p style="text-align: center">Guess the word. Hint: It's a city!</p>
+
+          <p id="test2" style="text-align: center"></p>
+
+          <p id="test3" style="text-align: center">
+            Guesses remaining: <label id="guesses-label"></label>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     type="text/javascript"
