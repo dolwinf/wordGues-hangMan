@@ -40,14 +40,14 @@ document.addEventListener("keyup", function(event) {
 
     if (check) {
       document.getElementById("test2").textContent =
-        "Winner! Winner! Chicken dinner. You guessed the word correctly!";
+        "Winner! You saved Jhonny's SOUL!!!!!!!";
     }
   } else {
     guessesRemaining--;
     document.getElementById("guesses-label").textContent = guessesRemaining;
     if (guessesRemaining < 1) {
       document.getElementById("guesses-label").textContent =
-        "You've run out of guesses! Restart the game and try again.";
+        "You've LOST! Restart the game before the devil takes your soul.";
     }
   }
 });
