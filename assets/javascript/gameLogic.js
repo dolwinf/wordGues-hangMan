@@ -22,6 +22,9 @@ for (var i = 0; i < randomWordSplit.length; i++) {
 
 document.getElementById("test").innerHTML = dashedWords;
 
+guessesRemaining = 15;
+document.getElementById("guesses-label").textContent = guessesRemaining;
+
 document.addEventListener("keyup", function(event) {
   var keyPressed = event.key;
   if (randomWordSplit.includes(keyPressed)) {
@@ -36,7 +39,15 @@ document.addEventListener("keyup", function(event) {
     });
 
     if (check) {
-      document.getElementById("test2").innerHTML = "Winner!";
+      document.getElementById("test2").textContent =
+        "Winner! Winner! Chicken dinner. You guessed the word correctly!";
+    }
+  } else {
+    guessesRemaining--;
+    document.getElementById("guesses-label").textContent = guessesRemaining;
+    if (guessesRemaining < 1) {
+      document.getElementById("guesses-label").textContent =
+        "You've run out of guesses! Restart the game and try again.";
     }
   }
 });
